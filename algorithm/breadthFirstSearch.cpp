@@ -1,4 +1,4 @@
-#iclude<iostream>
+#include<iostream>
 
 using namespace std;
 struct note
@@ -58,6 +58,7 @@ int main()
                 que[tail].y=ty;
                 que[tail].f=head;
                 que[tail].s=que[head].s+1;
+                tail++;
             }
             if (tx == p && ty == q)
             {
@@ -65,10 +66,14 @@ int main()
                 flag = 1;
                 break;
             }
-            
-            
         }
-        
+        if (flag == 1)
+        {
+            /* code */
+            break;
+        }
+        head++;        
     }
-    
+    cout<<que[tail-1].s <<endl;
+
 }
