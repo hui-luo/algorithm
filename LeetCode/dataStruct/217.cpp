@@ -25,5 +25,5 @@ public:
 
 int main()
 {
-    sdfas；
+    
 }
