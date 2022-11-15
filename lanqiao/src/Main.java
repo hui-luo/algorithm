@@ -1,4 +1,3 @@
-package lanqiao;
 import java.util.Scanner;
 
 public class Main {
@@ -11,6 +10,7 @@ public class Main {
         for (char i : str.toCharArray()) {
             alphabet[i-97]++;
         }
+
         int max = 0;
         int index = 0;
         for (int i = 0;i < alphabet.length; i++) {
